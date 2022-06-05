@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trading.services", "trading
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trading.models", "trading.models\trading.models.csproj", "{1662801A-3B3B-460A-BED3-D64748A1DFD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trading.api", "trading.api\trading.api.csproj", "{DD32CE5D-BF5A-40B3-A90A-1E7F342EEBCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{1662801A-3B3B-460A-BED3-D64748A1DFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1662801A-3B3B-460A-BED3-D64748A1DFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1662801A-3B3B-460A-BED3-D64748A1DFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD32CE5D-BF5A-40B3-A90A-1E7F342EEBCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD32CE5D-BF5A-40B3-A90A-1E7F342EEBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD32CE5D-BF5A-40B3-A90A-1E7F342EEBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD32CE5D-BF5A-40B3-A90A-1E7F342EEBCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
