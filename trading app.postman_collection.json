@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "569dd5c3-f638-44f6-b5e7-31ed69f1a31b",
+		"name": "trading app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Weatherforecast",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7156/Weatherforecast",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7156",
+					"path": [
+						"Weatherforecast"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show all trading account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7156/api/tradingaccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7156",
+					"path": [
+						"api",
+						"tradingaccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get acc balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7156/api/investment/204aecd1-c2b8-491c-b064-913c3c2308bb/balance",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7156",
+					"path": [
+						"api",
+						"investment",
+						"204aecd1-c2b8-491c-b064-913c3c2308bb",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add trading account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"initialDeposit\": 800,\r\n    \"name\":\"Dheeraj\",\r\n    \"Address\":\"Bangalore,India\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7156/api/tradingaccount",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7156",
+					"path": [
+						"api",
+						"tradingaccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "investment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7156/api/investment",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7156",
+					"path": [
+						"api",
+						"investment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add investment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Currency\": \"JPY\",\r\n    \"InstitutionName\": \"Google\",  \r\n    \"Amount\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7156/api/investment/ff628fd6-30c3-4c10-8185-fd9646eef387",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7156",
+					"path": [
+						"api",
+						"investment",
+						"ff628fd6-30c3-4c10-8185-fd9646eef387"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by currency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7156/api/investment/search?currency=JPY",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7156",
+					"path": [
+						"api",
+						"investment",
+						"search"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "JPY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by amount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7156/api/investment/search?amount=403",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7156",
+					"path": [
+						"api",
+						"investment",
+						"search"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "usd",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "403"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by institution",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7156/api/investment/search?currency=eur&institutionName=google",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7156",
+					"path": [
+						"api",
+						"investment",
+						"search"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "eur"
+						},
+						{
+							"key": "amount",
+							"value": "579",
+							"disabled": true
+						},
+						{
+							"key": "institutionName",
+							"value": "google"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

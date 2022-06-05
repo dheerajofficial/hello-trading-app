@@ -1,6 +1,9 @@
 # Trading App
 dotnet dev-certs https --trust
 
+https://localhost:7156/swagger/index.html
+
+
 ## create new sln and projects
 
 `dotnet new sln --name=tradingapp`
